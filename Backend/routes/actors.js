@@ -1,5 +1,5 @@
 const express = require("express");
-const Actor = require("../models/Actors"); 
+const Actor = require("../../Backend/models/Actors"); 
 
 const router = express.Router();
 

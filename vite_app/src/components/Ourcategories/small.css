@@ -1,43 +1,50 @@
+/* General Styles */
 .tattoo-studio {
     background-color: #000;
     color: #fff;
     min-height: 80vh;
-    width: 99vw;
-  }
-  
-  /* Hero Section */
-  .sm-section {
+    width: 99vw; /* Changed from 110% to prevent horizontal scroll */
+    overflow-x: hidden;
+    margin-top: 3.7rem;
+}
+
+/* Hero Section */
+.sm-section {
     position: relative;
-    padding: 120px 5% 160px;
     background-color: #000;
-    height: 22vh;
-  }
-  
-  .sm-content {
+    height: 38vh;
+    margin-top:-3.5rem;
+    padding: 0 5%;
+    margin-left: 0rem;
+}
+
+.sm-content {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .sm-content h2 {
+}
+
+.sm-content h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    margin-top: 2.4vh;
+    margin-top: 14vh;
     line-height: 1.2;
     font-family: Bebas Neue, sans-serif;
-  }
-  
-  .sm-content .p1{
+}
+
+.sm-content .p1 {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
     margin-top: 1.8vh;
-    margin-left: .5vw;
     color: white;
-    width: 80vw;
+    min-width: 80vw;
     font-family: Bebas Neue, sans-serif;
-  }
-  .wave-divider {
+    margin-left: 0rem;
+    padding-right: 34rem;
+}
+
+.wave-divider {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -47,44 +54,44 @@
                 linear-gradient(-45deg, transparent 33.33%, #fff 33.33%, #fff 66.66%, transparent 66.66%);
     background-size: 20px 40px;
     background-position: 0 -80px;
-  }
-  
-  /* Gallery Section */
-  .gallery-section {
+}
+
+/* Gallery Section */
+.gallery-section {
     background-color: #fff;
     padding: 80px 5%;
-  }
-  
-  .gallery-section h2 {
+}
+
+.gallery-section h2 {
     color: #000;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-  }
-  
-  .tattoo-grid {
+}
+
+.tattoo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .tattoo-card {
+}
+
+.tattoo-card {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     aspect-ratio: 1;
-  }
-  
-  .tattoo-card img {
+}
+
+.tattoo-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-  }
-  
-  .tattoo-overlay {
+}
+
+.tattoo-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -93,17 +100,17 @@
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
-  
-  .tattoo-card:hover .tattoo-overlay {
+}
+
+.tattoo-card:hover .tattoo-overlay {
     opacity: 1;
-  }
-  
-  .tattoo-card:hover img {
+}
+
+.tattoo-card:hover img {
     transform: scale(1.05);
-  }
-  
-  .like-button {
+}
+
+.like-button {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -111,10 +118,9 @@
     border: none;
     color: #fff;
     cursor: pointer;
-  }
-  
-  
-  .tattoo-grid .tattoo-card:nth-child(-n+9) .hover-overlay {
+}
+
+.tattoo-grid .tattoo-card:nth-child(-n+9) .hover-overlay {
     opacity: 0;
     position: absolute;
     bottom: 5px;
@@ -123,25 +129,93 @@
     height: 4vw;
     display: flex;
     align-items: center;
-    gap: 8px; /* Spacing between logo and text */
+    gap: 8px;
     transition: opacity 0.3s ease-in-out;
     padding: 0px 1px;
     border-radius: 5px;
-  }
-  
-  .tattoo-grid .tattoo-card:nth-child(-n+9):hover .hover-overlay {
+}
+
+.tattoo-grid .tattoo-card:nth-child(-n+9):hover .hover-overlay {
     opacity: 1;
-  }
-  
-  .artist-logo {
+}
+
+.artist-logo {
     width: 30px;
     height: 30px;
-  }
-  
-  .artist-name {
+}
+
+.artist-name {
     color: white;
     font-size: 14px;
     font-weight: bold;
     margin: 0;
-  }
-  
+}
+
+.small-footer {
+    margin-top: 5vh;
+}
+
+
+/* ========================================= */
+/* --- MOBILE RESPONSIVE STYLES (IMPROVED) --- */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    .tattoo-studio {
+        margin-top: 3rem;
+        width: 100%; /* Fix width for mobile */
+    }
+
+    /* Hero Section adjustments for mobile */
+    .sm-section {
+        height: 43vh; /* Let height be determined by content */
+        padding: 3rem 5%;
+        text-align: center; /* Center align text on mobile */
+        margin-top: -5rem;
+    }
+
+    .sm-content h2 {
+        font-size: 2rem;
+        /* CRITICAL FIX: Removed negative margin */
+        margin-left: 0;
+        margin-top: 6rem;
+    }
+
+    .sm-content .p1 {
+        font-size: 1.1rem;
+        /* CRITICAL FIX: Removed min-width and padding-right */
+        min-width: 0;
+        width: 100%;
+        padding-right: 0;
+        margin: 1rem auto;
+    }
+
+    /* Gallery Section adjustments for mobile */
+    .gallery-section {
+        padding: 40px 5%;
+    }
+
+    .gallery-section h2 {
+        font-size: 2rem;
+    }
+
+    .tattoo-grid {
+        gap: 1.5rem; /* Reduced the gap between tattoo images */
+    }
+
+    /* Artist info hover box for mobile */
+    .tattoo-grid .tattoo-card:nth-child(-n+9) .hover-overlay {
+        width: 120px;   /* Use a fixed width in pixels */
+        height: 30px;   /* Use a fixed height for consistency */
+        gap: 5px;
+    }
+
+    .artist-logo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .artist-name {
+        font-size: 12px;
+    }
+}

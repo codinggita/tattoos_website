@@ -3,7 +3,7 @@ const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
 const nodemailer = require("nodemailer");
-const Review = require("../models/Review");  // Import the model
+const Review = require("../../Backend/models/Review");  // Import the model
 
 const router = express.Router();
 
@@ -26,8 +26,8 @@ const upload = multer({ storage });
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: "ironcore.gym.1@gmail.com",
-        pass: "whhy issm gytp uyoz"  // Make sure to use your actual password here (consider using environment variables)
+        user: "mywebsite.cg22@gmail.com",
+        pass: "khjo oahq atcl rrsq"  // Make sure to use your actual password here (consider using environment variables)
     }
 });
 

@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const HomeCategory = require("../models/Categories");
+const HomeCategory = require("../../Backend/models/Categories");
 
 const router = express.Router();
 

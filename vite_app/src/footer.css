@@ -1,0 +1,341 @@
+/* --- Original Desktop Styles (Unchanged) --- */
+
+.footer {
+    width: 99vw;
+    height: 80vw;
+    background-color: black;
+    margin-top: 5vh;
+    /* Added for a cleaner look on all screen sizes */
+    overflow-x: hidden; 
+    color: white; /* Added default text color */
+}
+
+.footer-image {
+    width: 80%;
+    height: 60%;
+    margin-top: 10vh;
+    margin-left: 9.5vw;
+}
+
+.footer-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 3vh;
+}
+
+.location {
+    margin-left: 9.5vw;
+}
+
+.use {
+    margin-left: 14.5vw;
+}
+
+.quick {
+    margin-left: 7.5vw;
+}
+
+.footer-3 {
+    width: 4vw;
+    height: .2vh;
+    background-color: white;
+    margin-left: 9.6vw;
+}
+
+.footer-4 {
+    width: 4vw;
+    height: .2vh;
+    background-color: white;
+    margin-left: 39.5vw;
+}
+
+.footer-5 {
+    width: 4vw;
+    height: .2vh;
+    background-color: white;
+    margin-left: 57.3vw;
+}
+
+.footer-6 {
+    width: 4vw;
+    height: .2vh;
+    background-color: white;
+    margin-left: 74.4vw;
+}
+
+.location-cir {
+    background-color: white;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    margin-left: 9.5vw;
+    margin-top: 2vh;
+}
+
+.location-ic {
+    width: 2.5vw;
+    height: 3.5vh;
+    margin-left: -.3vw;
+    margin-top: 0.2vh;
+}
+
+.location-p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 12vw;
+    margin-top: -4vh;
+    width: 24vw;
+}
+
+.location-cir1 {
+    background-color: white;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    margin-left: 9.5vw;
+    margin-top: 3.5vh;
+}
+
+.location-ic1 {
+    width: 1.3vw;
+    height: 3.5vh;
+    margin-left: .4vw;
+    margin-top: 0.2vh;
+}
+
+.location-p1 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 12vw;
+    margin-top: -4vh;
+    width: 24vw;
+}
+
+.location-cir2 {
+    background-color: white;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    margin-left: 9.5vw;
+    margin-top: 3.5vh;
+}
+
+.location-ic2 {
+    width: 1.3vw;
+    height: 3.5vh;
+    margin-left: .4vw;
+    margin-top: 0.2vh;
+}
+
+.location-p2 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 12vw;
+    margin-top: -4vh;
+    width: 24vw;
+}
+
+.use-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 39.5vw;
+    margin-top: -30vh;
+    gap: .8rem;
+    font-size: 1.1rem;
+}
+
+.footer-home {
+    color: white;
+    text-decoration: none;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 57.3vw;
+    margin-top: -25vh;
+    gap: .8rem;
+    font-size: 1.1rem;
+}
+
+.follow-cir {
+    margin-left: 74.4vw;
+    margin-top: -18.5vh;
+    width: 2.4vw;
+    height: 5vh;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.follow-git {
+    width: 3.4vw;
+    height: 4.3vh;
+    margin-left: -.5vw;
+    margin-top: .3vh;
+}
+
+.follow-cir1 {
+    margin-left: 77.8vw;
+    margin-top: -5vh;
+    width: 2.4vw;
+    height: 5vh;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.follow-x {
+    width: 3.4vw;
+    height: 4.3vh;
+    margin-left: -.5vw;
+    margin-top: .3vh;
+}
+
+.follow-cir2 {
+    margin-left: 81.3vw;
+    margin-top: -5vh;
+    width: 2.4vw;
+    height: 5vh;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.follow-insta {
+    width: 1.3vw;
+    height: 3.8vh;
+    margin-left: .6vw;
+    margin-top: .5vh;
+}
+
+.footer-row {
+    background-color: white;
+    width: 78.5vw;
+    height: .1vh;
+    margin-top: 31vh;
+    margin-left: 9.6vw;
+}
+
+/* --- Responsive Styles for Mobile & Tablet --- */
+@media (max-width: 768px) {
+    
+    /* Adjust footer height to fit content */
+    .footer {
+        height: auto;
+        padding-bottom: 5vh; 
+        width: 100.1vw;/* Add some space at the bottom */
+    }
+
+    /* Center the top image */
+    .footer-image {
+        width: 85%;
+        height: auto; /* Maintain aspect ratio */
+        margin: 5vh auto 0 auto; /* Center the image */
+        display: block;
+    }
+
+    /* Change grid from 4 columns to 1 column */
+    .footer-2 {
+        grid-template-columns: 1fr;
+        gap: 2rem; /* Add space between stacked sections */
+        margin-top: 5vh;
+        padding: 0 5vw; /* Add side padding */
+        text-align: center; /* Center section titles */
+    }
+    
+    /* Reset specific margins for section titles */
+    .location, .use, .quick {
+        margin-left: 0;
+    }
+
+    /* Group and style the underlines to appear centered under titles */
+    .footer-3, .footer-4, .footer-5, .footer-6 {
+        margin: 0.5rem auto 0 auto; /* Center the underlines */
+        width: 25vw; /* Give them a reasonable width */
+        height: 2px;
+    }
+
+    /* --- Re-style Location/Contact Info --- */
+    /* Create a flex container for each icon-text pair */
+    .location-item {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the items */
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    /* Reset positioning and use fixed sizes for icons */
+    .location-cir, .location-cir1, .location-cir2 {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        flex-shrink: 0; /* Prevent icons from shrinking */
+        display: flex; /* Helps center the icon inside */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Adjust icon images */
+    .location-ic, .location-ic1, .location-ic2 {
+        width: auto;
+        height: 20px;
+        margin: 0;
+    }
+    
+    /* Reset positioning and adjust width for text */
+    .location-p, .location-p1, .location-p2 {
+        width: 60vw;
+        margin: 0;
+        text-align: left; /* Align text to the left */
+        font-size: 0.9rem;
+    }
+
+    /* --- Re-style Links Sections --- */
+    /* Reset fragile positioning and center the links */
+    .use-links, .quick-links {
+        margin: 0.5rem auto 0 auto; /* Reset margins and center */
+        align-items: center; /* Center the flex items */
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    /* --- Re-style Social Media Icons --- */
+    /* Create a container to hold the icons in a row */
+    .follow-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    /* Reset positioning and use fixed sizes for icons */
+    .follow-cir, .follow-cir1, .follow-cir2 {
+        margin: 0;
+        width: 45px;
+        height: 45px;
+        display: flex; /* Helps center the icon inside */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Adjust icon images */
+    .follow-git, .follow-x {
+        width: auto;
+        height: 25px;
+        margin: 0;
+    }
+    .follow-insta {
+        width: auto;
+        height: 22px;
+        margin: 0;
+    }
+    
+    /* Adjust final horizontal rule */
+    .footer-row {
+        margin-top: 5vh; /* Reduce top margin */
+        width: 90vw;
+        margin-left: 5vw; /* Center the rule */
+    }
+}

@@ -2,7 +2,7 @@ const express = require("express");
 const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
-const SmallCategory = require("../models/SmallCategory"); 
+const SmallCategory = require("../../Backend/models/Smallcategory"); 
 
 const router = express.Router();
 

@@ -1,544 +1,62 @@
-.contact-img{
-  width: 79vw;
-  height: 80vh;
-  margin-left: 10vw;
-  border-radius: 1vw;
-  margin-top: 12.5vh;
-  animation: fadeInLeft 1s ease-out forwards;
-}
-.kiran{
-  background-color: black;
-  width: 79vw ;
-  height: 35vh;
-  margin-left: 10vw;
-  margin-top: 0vh;
-  border-radius: 1vw;
-  
-  
-}
-.contact-text{
-  color:white;
-  font-family: Bebas Neue, sans-serif;
-  font-weight: 600;
-  font-size: 250%;
-  padding-left: 8vw;
-  padding-top: 5vh;
-}
-.contact-text2{
-  color:white;
-  font-family: Bebas Neue, sans-serif;
-  padding-left: 8vw;
-  /* padding-bottom: 2vh; */
-  margin-top: -2vh;
-  font-size: 110%;
-  width: 55vw;
-}
-.about{
-  color:black;
-  font-family: Bebas Neue, sans-serif;
-  font-weight: 600;
-  margin-left: 20vw;
-  margin-top: 15vh;
-  font-size: 260%;
-}
-.get-1{
-color:black;
-margin-left: 12vw;
-font-family: Bebas Neue, sans-serif;
-font-size: 160%;
-}
-.get-2{
-color:black;
-margin-left: 15.5vw;
-font-family: Bebas Neue, sans-serif;
-font-size: 160%;
-margin-top: -3vh;
-}
-.map{
-width: 28vw;
-margin-left: 16vw;
-}
 
-.contact-form-container {
-  max-width: 500px;
-  margin: 0 auto;
-  margin-left: 54vw;
-  margin-top: -85vh;
-  padding: 20px;
-  background-color: #000;
-  color: #fff;
-  border-radius: .5vw;
-  height: 80vh;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
-/* .contact-title {
-  text-align: center;
-  margin-bottom: 20px;
-} */
 
-.contact-form {
+.contact-container {
   display: flex;
   flex-direction: column;
-  padding-top: 3vh;
-  padding-left: 1.3vw;
-}
-
-.form-group {
-  margin-bottom: 35px;
-}
-
-.form-group label {
-  font-weight: bold;
-  font-size: 120%;
-  margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group select {
-  padding: 8px;
-  border: none;
-  border-radius: 4px;
-  background-color: #fff;
-  color: #000;
-  width: 96%;
+  align-items: center;
+  width: 100%;
+  padding: 4.7rem 9.5rem;
   box-sizing: border-box;
 }
 
-
-.submit-button {
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background-color: white;
-  color: black;
-  font-weight: bold;
-  font-size: 1.2rem;
-  cursor: pointer;
-  margin-top: 18px;
-  width: 10vw;
-  margin-left:.1vw;
-  transition: background-color 0.3s;
+.studio-photo-wrapper {
+  width: 100%;
+  max-width: 1470px;
 }
 
-.submit-button:hover {
+.studio-photo-contact {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: cover;
+  border-radius: 1rem;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.studio-info {
   background-color: black;
-  color:white;
-  border: 1px solid white;
+  width: 100%;
+  max-width: 1370px;
+  min-height: 16rem;
+  border-radius: 1rem;
+  margin-top: -0.5rem;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.contact-footer{
-  background-color: black;
-  width: 99vw;
-  height: 170vh;
-  margin-top: 12vh;
-  position:absolute;
-}
-.dreamers{
-  margin-left: 9vw;
-  width: 80vw;
-  height: 90vh;
-  margin-top: 12vh;
-}
-.dreamers-1{
-  margin-left: 9vw;
-  width: 75vw;
-  margin-top: 4vh;
-}
-ul{
-  display: flex;
-  column-gap: vw;
-  margin-left: vw;
-}
-
-.footer-2 li{
-  color:white;
-  font-family: Bebas Neue, sans-serif;
+.studio-info-text {
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 600;
-  margin-left: 9.5vw;
-  margin-top:2vh ;
-  font-size: 120%;
-  
-}
-.use{
-  padding-left: 15vw;
-}
-.quick{
-  padding-left: -4vw;
+  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+  margin: .8vh;
+  padding-left: 1.9rem;
 }
 
-.footer-3{
-background-color: white;
-width: 4vw;
-height: .1vh;
-margin-left: 9.5vw;
-margin-top: 2vh;
-}
-.footer-4{
-background-color: white;
-width: 4vw;
-height: .1vh;
-margin-left: 40.5vw;
-margin-top: 0.2vh;
-}
-.footer-5{
-background-color: white;
-width: 4vw;
-height: .1vh;
-margin-left: 59.2vw;
-margin-top: 0vh;
-}
-.footer-6{
-background-color: white;
-width: 4vw;
-height: .1vh;
-margin-left: 76.6vw;
-margin-top: 0vh;
-}
- 
-.circle{
-  border-radius: 50%;
-  width: 2.7vw;
-  height: 2.7vw;
-  background-color: white;
-  margin-left: 9.7vw;
-  margin-top: 2vh;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.circle-1{
-  border-radius: 50%;
-  width: 2.7vw;
-  height: 2.7vw;
-  background-color: white;
-  margin-left: 9.7vw;
-  margin-top: 5vh;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- 
-}
-.circle-2{
-  border-radius: 50%;
-  width: 2.7vw;
-  height: 2.7vw;
-  background-color: white;
-  margin-left: 9.7vw;
-  margin-top: 4vh;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- 
-}
-.icon-1{
-  margin-left: vw;
-  margin-top: vh;
-  /* background-image: url('https://img.icons8.com/color/48/000000/facebook-f.png'); */
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 2.7vw;
-  height: 2.7vw;
-  background-size: contain;
-}
-
-    .icon-2{
-  margin-left:.5vw;
-  margin-top: 1vh;
-  /* background-image: url('https://img.icons8.com/color/48/000000/facebook-f.png'); */
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 1.7vw;
-  height: 1.7vw;
-  background-size: contain;
-}
-.icon-3{
-  margin-left:vw;
-  margin-top: 1vh;
-  /* background-image: url('https://img.icons8.com/color/48/000000/facebook-f.png'); */
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 2.7vw;
-  height: 1.7vw;
-  background-size: contain;
-}
-.p1{
-  color:white;
-  font-family: Bebas Neue, sans-serif;
-  margin-left: 14vw;
-  margin-top: -4vh;
-  width: 24vw;
-  font-weight: 500;
-}
-.p2{
-  color:white;
-  font-family: Bebas Neue, sans-serif;
-  margin-left: 14vw;
-  margin-top: -4.5vh;
-  width: 24vw;
-  font-weight: 500;
-}
-.p3{
-  color:white;
-  font-family: Bebas Neue, sans-serif;
-  margin-left: 14vw;
-  margin-top: -4.4vh;
-  width: 24vw;
-  font-weight: 500;
-}
-.links{
-  color:white;
-  margin-left: 42vw;
-  display: flex;
-  flex-direction: column;
-  margin-top: -36.5vh;
-  font-family: Bebas neue, sans-serif;
-  row-gap: 1.1vw;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.footer-route{
-  color:white;
-}
-
-.footer-route:hover{
-  color:#90807d;
-}
-.links-1{
-  color:white;
-  margin-left: 60.5vw;
-  display: flex;
-  flex-direction: column;
-  margin-top: -31vh;
-  font-family: Bebas neue, sans-serif;
-  row-gap: 1.1vw;
-  font-weight: 500;
-}
-
-.circle-3{
-  border-radius: 50%;
-  width: 2.7vw;
-  height: 2.7vw;
-  background-color: white;
-  margin-left: 76.7vw;
-  margin-top: -21vh;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- 
-}
-
-.circle-4{
-  border-radius: 50%;
-  width: 2.7vw;
-  height: 2.7vw;
-  background-color: white;
-  margin-left: 80.7vw;
-  margin-top: -5.5vh;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- 
-}
-.circle-5{
-  border-radius: 50%;
-  width: 2.7vw;
-  height: 2.7vw;
-  background-color: white;
-  margin-left: 84.7vw;
-  margin-top: -5.5vh;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- 
-}
-.contact {
-  width: 79vw;
-  height: 80vh;
-  margin-left: 10vw;
-  margin-top: 5vh;
-  border-radius: 0.5rem;
-  opacity: 0;
-  animation: fadeInTop 1s ease-out forwards;
-}
-
-.kiran {
-  background-color: black;
-  width: 79vw;
-  height: 35vh;
-  margin-left: 10vw;
-  margin-top: 5vh;
-  border-radius: 0.5rem;
-  opacity: 0;
-  animation: fadeInBottom 1s ease-out forwards;
-}
-
-.about, .get-1, .get-2, .map {
-  opacity: 0;
-  animation: fadeInLeft 3s ease-out forwards;
-}
-
-.contact-form-container {
-  opacity: 0;
-  animation: fadeInRight 3s ease-out forwards;
-}
-
-.contact-footer, .dreamers, .dreamers-1, .footer-2, .footer-3, .footer-4, .footer-5, .footer-6, .circle, .circle-1, .circle-2, .icon-1, .icon-2, .p1, .p2, .p3, .links, .links-1, .circle-3, .circle-4, .circle-5 {
-  opacity: 0;
-  animation: fadeInUp 3s ease-out forwards;
-}
-
-.row {
-  background-color: white;
-  width: 79vw;
-  height: 0.1vh;
-  margin-top: 40vh;
-  margin-left: 9vw;
-}
-
-body {
-background-color: white;
-}
-
-.contact-form-container {
-background-color: #000;
-color: #fff;
-}
-
-.contact-footer {
-background-color: black;
-}
-
-/* Rest of the CSS remains unchanged */
-
-.contact {
-width: 79vw;
-height: 80vh;
-margin-left: 10vw;
-border-radius: 1vw;
-margin-top: 10.5vh;
-animation: fadeInLeft 1s ease-out forwards;
-}
-
-.kiran {
-background-color: black;
-width: 79vw;
-height: 35vh;
-margin-left: 10vw;
-margin-top: -5.2vh;
-border-radius: 1vw;
-}
-
-/* ... (rest of the CSS remains unchanged) ... */
-
-.row {
-background-color: white;
-width: 79vw;
-height: 0.1vh;
-margin-top: 40vh;
-margin-left: 9vw;
-}
-
-.message-box {
-position: fixed;
-top: 20px;
-right: 20px;
-background-color: black; /* Green color for success */
-color: white;
-padding: 15px 20px;
-border-radius: 5px;
-font-size: 16px;
-z-index: 1000;
-animation: fadeInOut 3s ease-in-out;
-}
-
-/* Add these styles to your contact.css file */
-
-/* Animation for elements that appear immediately on page load */
-.fade-in {
-animation: fade-in 1s ease-out forwards;
-}
-
-/* Animation for elements that appear when scrolling */
-.enter-right {
-animation: enter-right 1s ease-out forwards;
-}
-
-.enter-left {
-animation: enter-left 1s ease-out forwards;
-}
-
-/* Keyframes for fade-in effect */
-@keyframes fade-in {
-from {
-  opacity: 0;
-}
-to {
-  opacity: 1;
-}
-}
-
-/* Keyframes for entering from the right */
-@keyframes enter-right {
-from {
-  transform: translateX(100%);
-  opacity: 0;
-}
-to {
-  transform: translateX(0);
-  opacity: 1;
-}
-}
-
-/* Keyframes for entering from the left */
-@keyframes enter-left {
-from {
-  transform: translateX(-100%);
-  opacity: 0;
-}
-to {
-  transform: translateX(0);
-  opacity: 1;
-}
-}
-
-@keyframes fadeInTop {
-  from {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInBottom {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.studio-info-text2 {
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.4rem, 2.4vw, 1.5rem);
+  padding-left: 2rem;
+  margin-top: .5rem;
+  width: 100%;
+  max-width: 75rem;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -546,6 +64,617 @@ to {
   }
 }
 
+/* Tablet and smaller desktop screens */
+@media (max-width: 1024px) {
+  .contact-container {
+    width: 100%;
+    padding: 2rem 2rem;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .studio-photo-wrapper {
+    max-width: 100%;
+  }
+
+  .studio-photo-contact {
+    max-height: 60vh;
+    border-radius: 0.8rem;
+  }
+
+  .studio-info {
+    max-width: 100%;
+    min-height: 18rem;
+    margin-top: 0.8rem;
+    padding: 1.5rem;
+  }
+
+  .studio-info-text {
+    font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+    padding-left: 1.5rem;
+  }
+
+  .studio-info-text2 {
+    font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+    padding-left: 1.5rem;
+    max-width: 90%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  .contact-container {
+    width: 100%;
+    padding: 5rem 1rem;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .studio-photo-wrapper {
+    max-width: 100%;
+  }
+
+  .studio-photo-contact {
+    max-height: 50vh;
+    border-radius: 0.5rem;
+  }
+
+  .studio-info {
+    max-width: 100%;
+    min-height: 15rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .studio-info-text {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    padding-left: 1rem;
+  }
+
+  .studio-info-text2 {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    padding-left: 1rem;
+    max-width: 95%;
+  }
+}
+
+
+
+
+/* Base styles for all screen sizes */
+.studio-touch {
+  color: black;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  margin-left: 2rem; /* Default for smaller screens */
+  margin-top: 10vh;
+}
+
+.studio-touch1 {
+  color: black;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.5rem, 4vw, 1.75rem);
+  margin-left: 2rem;
+  margin-top: -2vh;
+}
+
+.studio-touch2 {
+  color: black;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.5rem, 4vw, 1.75rem);
+  margin-left: 2rem;
+  margin-top: -2vh;
+}
+
+.studio-map {
+  width: 90%;
+  max-width: 400px;
+  margin: 2rem auto; /* Centered for smaller screens */
+}
+
+.kcontact-form-container {
+  max-width: 90%;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0.5rem;
+  min-height: 60vh;
+ 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.kcontact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  
+}
+
+.kform-group {
+  margin-bottom: 1.5rem;
+}
+
+.kform-group label {
+  font-weight: bold;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.kform-group input,
+.kform-group select {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ksubmit-buttontwo {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4a90e2;
+  color: black;
+  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 1.5rem auto 0;
+  transition: background-color 0.3s;
+}
+
+.ksubmit-buttontwo:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile devices (up to 768px) */
+@media screen and (max-width: 768px) {
+  .studio-touch {
+    font-size: clamp(1.8rem, 6vw, 2rem);
+    margin-left: 1rem;
+    margin-top: 5vh;
+    text-align: center; /* Center text for mobile */
+  }
+
+  .studio-touch1,
+  .studio-touch2 {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    margin-left: 1rem;
+    margin-top: -1vh;
+    text-align: center;
+  }
+
+  .studio-map {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+  }
+
+  .kcontact-form-container {
+    margin: 1rem auto;
+    padding: 1rem;
+    min-height: 48vh;
+  }
+
+  .kcontact-form {
+    padding: 1rem 0.5rem;
+  }
+
+  .kform-group {
+    margin-bottom: 1rem;
+  }
+
+  .ksubmit-buttontwo {
+    max-width: 40%;
+    padding: 0.5rem;
+  }
+}
+
+/* Tablet devices (768px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .studio-touch {
+    font-size: clamp(2rem, 5vw, 2.4rem);
+    margin-left: 1.5rem;
+    margin-top: 8vh;
+  }
+
+  .studio-touch1,
+  .studio-touch2 {
+    font-size: clamp(1.4rem, 4vw, 1.6rem);
+    margin-left: 1.5rem;
+    margin-top: -1.5vh;
+  }
+
+  .studio-map {
+    width: 80%;
+    max-width: 350px;
+    margin: 1.5rem auto;
+  }
+
+  .kcontact-form-container {
+    max-width: 80%;
+    margin: 1.5rem auto;
+    min-height: 70vh;
+  }
+}
+
+/* Desktop devices (above 1024px) */
+@media screen and (min-width: 1025px) {
+  .studio-touch {
+    font-size: 260%; /* Original desktop font size */
+    margin-left: -29vw; /* Original negative margin */
+    margin-top: 15vh; /* Original margin */
+  }
+
+  .studio-touch1 {
+    font-size: 175%;
+    margin-left: -37vw; /* Original negative margin */
+    margin-top: 0vh;
+  }
+
+  .studio-touch2 {
+    font-size: 175%;
+    margin-left: -34vw; /* Original negative margin */
+    margin-top: 0vh;
+  }
+
+  .studio-map {
+    margin-left: 6vw; /* Original negative margin */
+    min-width: 28vw; /* Original width */
+    margin-top: 3vh;
+  }
+
+  .kcontact-form-container {
+    max-width: 500px;
+    margin-left: 45vw; /* Original right-side positioning */
+    margin-top: -84vh; /* Original overlap effect */
+    min-height: 80vh;
+    margin-bottom: -10vh;
+  }
+
+  .ksubmit-buttontwo {
+    width: 10vw; /* Original button width */
+    height: 6vh;
+    margin-left: 0; /* Original button positioning */
+    margin-top: 3vh;
+  }
+}
+
+
+
+/* Base styles for all screen sizes */
+.payment-button1 {
+  padding: .625rem; /* 10px in rem */
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  cursor: pointer;
+  margin-top: 0; /* Original had 'px', assuming 0 */
+  width: 100%; /* Flexible width */
+  max-width: 200px; /* Limit for larger screens */
+  margin-left: auto;
+  margin-right: auto;
+  display: block; /* Center button */
+  transition: background-color 0.3s;
+}
+
+.payment-button1:hover {
+  background-color: #000;
+  color: white;
+  border: 1px solid white;
+  width: 36.5%;
+ 
+}
+
+.payment-button1:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.payment-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.payment-content {
+  background: white;
+  padding: clamp(1rem, 3vw, 1.25rem); /* 20px in rem */
+  border-radius: 5px;
+  position: relative;
+  width: 90%; /* Flexible width */
+  max-width: 400px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.625rem; /* 10px */
+  right: 0.625rem;
+  border: none;
+  background: none;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  cursor: pointer;
+}
+
+.payment-submit {
+  background-color: #000;
+  color: white;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1.25rem; /* 20px */
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.payment-submit:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  margin-top: 0.625rem; /* 10px */
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+.head {
+  color: #000;
+}
+
+/* Mobile devices (up to 768px) */
+@media screen and (max-width: 768px) {
+  .payment-button1 {
+    padding: .5rem;
+    font-size: clamp(0.9rem, 4vw, 1rem);
+    max-width: 50%; /* Full width for mobile */
+    margin-left: 32vw;
+    margin-top: -4vh;
+  }
+
+  .payment-content {
+    padding: 1rem;
+    max-width: 95%; /* Slightly more width on small screens */
+  }
+
+  .close-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+
+  .payment-submit {
+    padding: 0.5rem 1rem;
+    font-size: clamp(0.8rem, 3vw, 0.9rem);
+  }
+}
+
+/* Tablet devices (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .payment-button1 {
+    padding: 0.6rem;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    max-width: 180px;
+  }
+
+  .payment-content {
+    padding: 1.1rem;
+    max-width: 80%;
+  }
+
+  .close-btn {
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+  }
+
+  .payment-submit {
+    padding: 0.6rem 1.1rem;
+  }
+}
+
+/* Desktop devices (above 1024px) */
+@media screen and (min-width: 1025px) {
+  .payment-button1 {
+    padding: 10px; /* Original */
+    font-size: 1.2rem; /* Original */
+    width: 10vw; /* Original */
+    margin-left: 15vw; /* Original */
+    margin-top: -5.5vh; /* Original */
+  }
+
+  .payment-content {
+    padding: 20px; /* Original */
+    width: 400px; /* Original */
+    max-width: 90%; /* Original */
+  }
+
+  .close-btn {
+    top: 10px; /* Original */
+    right: 10px; /* Original */
+    font-size: 24px; /* Original */
+  }
+
+  .payment-submit {
+    padding: 10px 20px; /* Original */
+    margin-top: 20px; /* Original */
+  }
+}
+
+/* Base styles for all screen sizes */
 body {
   background-color: white;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.message-box {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+/* Animation keyframes */
+@keyframes fadeInTop {
+  from { opacity: 0; transform: translateY(-1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInBottom {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-1rem); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(1rem); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-0.5rem); }
+  20% { opacity: 1; transform: translateY(0); }
+  80% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-0.5rem); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes enter-right {
+  from { transform: translateX(50%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes enter-left {
+  from { transform: translateX(-50%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+
+/* Tablet devices (769px–1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .contact-footer {
+    min-height: 90vh;
+    margin-top: 8rem;
+    padding: 1.5rem;
+  }
+
+  .dreamers, .dreamers-1, .contact, .kiran {
+    width: 90%;
+    max-height: 40vh;
+    margin: 1rem auto;
+    min-height: 25vh;
+  }
+
+  .p1, .p2, .p3 {
+    margin: 0.8rem 1rem;
+    max-width: 80%;
+  }
+
+  .footer-3, .footer-4, .footer-5, .footer-6 {
+    width: 3rem;
+    margin: 0.5rem 1rem;
+  }
+
+  .footer-4 { margin-left: 1rem; }
+  .footer-5 { margin-left: 1rem; }
+  .footer-6 { margin-left: 1rem; }
+
+  .links, .links-1 {
+    margin: 1rem;
+    gap: 0.5rem;
+  }
+
+  .footer-2 {
+    flex-direction: row;
+    gap: 1rem;
+    margin: 1rem;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+  }
+
+  .circle, .circle-1, .circle-2, .circle-3, .circle-4, .circle-5 {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem 1rem;
+  }
+
+  .circle-4, .circle-5 {
+    margin-left: 1rem;
+  }
+
+  .icon-1, .icon-2, .icon-3 {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .icon-2 {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .contact-form-container {
+    width: 80%;
+    padding: 1rem;
+  }
+}
+
+/* Desktop devices (>1024px) */
+
+
+
+.studio-form {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
 }

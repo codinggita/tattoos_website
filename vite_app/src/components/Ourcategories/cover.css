@@ -1,39 +1,51 @@
+/* General Body Styles */
 .cover-up-tattoo {
     background-color: #000;
     color: #fff;
     min-height: 100vh;
+    /* Use 100vw and overflow-x to prevent horizontal scrollbar */
     width: 99vw;
-  }
-  
-  /* Hero Section */
-  .sm-section {
+    overflow-x: hidden;
+    margin-top: 3.7rem;
+}
+
+/* Hero Section */
+.co-section {
     position: relative;
-    padding: 120px 5% 160px;
+    padding: 110px 5% 160px;
     background-color: #000;
-  }
-  
-  .sm-content {
+    height: 45vh;
+    
+}
+
+.co-content {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .sm-content h2 {
+    text-align: center; /* Center align content */
+}
+
+.co-content h2 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 2rem;
     line-height: 1.2;
-    margin-top: px;
-  }
-  
-  .sm-content p {
+    margin-top: -7.5vh;
+    margin-left: -48rem;
+}
+
+.co-content .p2 {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    color: #ccc;
-    max-width: 800px;
-  }
-  
-  .wave-divider {
+    color: white;
+    /* CRITICAL FIX: Removed min-width and used max-width */
+    min-width: 800px;
+    margin: 1rem auto 0; /* Centering helper */
+    margin-left: 0rem;
+    width: 500px;
+}
+
+.wave-divider {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -43,44 +55,44 @@
                 linear-gradient(-45deg, transparent 33.33%, #fff 33.33%, #fff 66.66%, transparent 66.66%);
     background-size: 20px 40px;
     background-position: 0 -80px;
-  }
-  
-  /* Gallery Section */
-  .gallery-section {
+}
+
+/* Gallery Section */
+.co-gallery-section {
     background-color: #fff;
     padding: 80px 5%;
-  }
-  
-  .gallery-section h2 {
+}
+
+.co-gallery-section h2 {
     color: #000;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-  }
-  
-  .tattoo-grid {
+}
+
+.co-tattoo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .tattoo-card {
+}
+
+.co-tattoo-card {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     aspect-ratio: 1;
-  }
-  
-  .tattoo-card img {
+}
+
+.co-tattoo-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-  }
-  
-  .tattoo-overlay {
+}
+
+.co-tattoo-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -89,17 +101,20 @@
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
-  
-  .tattoo-card:hover .tattoo-overlay {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* TYPO FIX: Changed .tattoo-overlay to .co-tattoo-overlay */
+.co-tattoo-card:hover .co-tattoo-overlay {
     opacity: 1;
-  }
-  
-  .tattoo-card:hover img {
+}
+
+.co-tattoo-card:hover img {
     transform: scale(1.05);
-  }
-  
-  .like-button {
+}
+
+.co-like-button {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -107,35 +122,36 @@
     border: none;
     color: #fff;
     cursor: pointer;
-  }
-  
-  /* Aftercare Section */
-  .aftercare-section {
+    font-size: 1rem;
+}
+
+/* Aftercare Section */
+.aftercare-section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                 url('https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
     padding: 120px 5%;
     text-align: center;
-  }
-  
-  .aftercare-content {
+}
+
+.aftercare-content {
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  .aftercare-content h2 {
+}
+
+.aftercare-content h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
-  }
-  
-  .aftercare-content p {
+}
+
+.aftercare-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #ccc;
-  }
-  
-  .aftercare-button {
+}
+
+.aftercare-button {
     padding: 1rem 2rem;
     font-size: 1.1rem;
     background-color: transparent;
@@ -143,15 +159,15 @@
     color: #fff;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  
-  .aftercare-button:hover {
+}
+
+.aftercare-button:hover {
     background-color: #fff;
     color: #000;
-  }
-  
-  /* Footer Section */
-  .studio-footer {
+}
+
+/* Footer Section */
+.studio-footer {
     background-color: #000;
     padding: 80px 5%;
     display: grid;
@@ -159,55 +175,95 @@
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .footer-section h3 {
+}
+
+.footer-section h3 {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-  }
-  
-  .footer-section p,
-  .footer-section a {
+}
+
+.footer-section p,
+.footer-section a {
     color: #ccc;
     margin-bottom: 0.5rem;
     text-decoration: none;
     display: block;
-  }
-  
-  .footer-section a:hover {
+}
+
+.footer-section a:hover {
     color: #fff;
-  }
-  
-  .social-links {
+}
+
+.social-links {
     display: flex;
     gap: 1rem;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2.5rem;
+}
+
+/* =============================================== */
+/* NEW AND IMPROVED RESPONSIVE DESIGN              */
+/* =============================================== */
+
+@media (max-width: 768px) {
+
+  .cover-up-tattoo {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    /* Use 100vw and overflow-x to prevent horizontal scrollbar */
+    width: 99.9vw;
+    overflow-x: hidden;
+    margin-top: 5rem;
+}
+    /* Hero Section Adjustments */
+    .co-section {
+        padding: 80px 5% 100px; /* Reduced padding */
+        height: 45vh; /* Allow height to fit content */
     }
-  
+
+    .co-content h2 {
+        font-size: 2.2rem;
+        margin-left: 0; /* Reset negative margin */
+        margin-top: -2.5rem;
+    }
+
+    .co-content .p2 {
+        font-size: 1rem;
+        /* CRITICAL FIX: Ensure paragraph is not wider than the screen */
+        width: 90vw;
+        min-width: 0; /* Reset min-width */
+    }
+
+    /* Gallery Section Adjustments */
+    .co-gallery-section h2 {
+        font-size: 2rem;
+    }
+
+    .co-tattoo-grid {
+        /* This allows for a 2-column layout on most mobile phones */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    /* Aftercare Section Adjustments */
+    .aftercare-section {
+        padding: 80px 5%;
+    }
+
     .aftercare-content h2 {
-      font-size: 2rem;
+        font-size: 2.2rem;
     }
-  
-    .tattoo-grid {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    .aftercare-content p {
+        font-size: 1rem;
     }
-  }
-  
-  @media (max-width: 480px) {
-    .hero-content h1 {
-      font-size: 2rem;
+
+    /* Footer Adjustments */
+    .studio-footer {
+        text-align: center;
+        gap: 2rem;
     }
-  
-    .hero-content p {
-      font-size: 1rem;
+
+    .social-links {
+        justify-content: center;
     }
-  
-    .aftercare-content h2 {
-      font-size: 1.5rem;
-    }
-  }
+}

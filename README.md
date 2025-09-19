@@ -1,43 +1,113 @@
+🎨 Tattoo Studio Website
+🌐 Live Demo & API Documentation
 
-# 🖋️ Tattoo Studio Website  
+🚀 Live Demo: Click here to view live demo
 
-## 🚀 Overview  
-This **Tattoo Studio Website** is a modern and interactive platform for tattoo enthusiasts. It features a sleek design, easy navigation, and an **AI-powered tattoo preview** that allows users to visualize tattoos on their own photos before getting inked.  
+📑 API Documentation (Postman): View Postman API Documentation
 
-## 🎨 Features  
-✅ **Home Page** – Showcasing tattoo art, services, and latest designs.  
-✅ **About Our Artist** – Meet our skilled tattoo professionals.  
-✅ **All Categories** – Explore various tattoo styles and inspirations.  
-✅ **Contact Page** – Easy ways to reach us for inquiries.  
-✅ **Book an Appointment** – Simple and hassle-free online booking.  
-✅ **AI Tattoo Preview** – Upload a photo and visualize your tattoo before getting inked.  
-✅ **Typeform Submission** – Smooth and interactive form submission for a better user experience.  
-✅ **User-Friendly UI** – A modern and responsive design for seamless browsing.  
+🌟 Overview
 
-## 🛠️ Technologies Used  
-- **HTML, CSS, JavaScript** for frontend development  
-- **React.js** (if applicable) for a dynamic user experience  
-- **AI-powered tattoo preview** for image processing  
-- **Figma** for UI/UX design  
+This is a modern, responsive tattoo studio website designed to provide an interactive and engaging experience for users. Clients can explore the studio, learn about artists, browse tattoo categories, and earn rewards that can be redeemed for discounts. The website features a sleek, minimalist design and is optimized for all devices.
 
-## 📷 AI Tattoo Preview  
-Our unique **AI-powered tattoo preview** lets users upload a photo and see how their selected tattoo will look on their skin, helping them make confident decisions.  
+⚡ Features
+🏠 Home Page
 
-## 📌 How to Use  
-1. Explore tattoo categories and designs.  
-2. Learn about our artists and their expertise.  
-3. Book an appointment through the easy-to-use form.  
-4. Try the **AI Tattoo Preview** by uploading your photo.  
-5. Contact us for any inquiries or custom designs.  
+Overview of the tattoo studio.
 
-## 📞 Contact  
-For any inquiries or collaborations, feel free to reach out via the **Contact Page** on our website.  
+Highlights latest tattoo designs and promotions.
 
----
+Modern, responsive design optimized for all devices.
 
-⭐ **Feel free to star this repository and contribute!**  
+👩‍🎨 About Our Artist
 
+Introduces tattoo artists with photos, specialties, and bios.
 
+Helps users choose artists based on style and experience.
 
-**
-DOCUMENTATION LINK: https://documenter.getpostman.com/view/39216531/2sAYX2P4dZ**
+📄 Artist Profile
+
+Dedicated pages for each artist.
+
+Users can view detailed portfolios and design examples.
+
+Interactive and visually appealing layout.
+
+🖼️ Tattoo Categories
+
+Browse various tattoo styles:
+
+Small Tattoos
+
+Stippling
+
+Nature
+
+Cover-ups
+
+Love & Relationship
+
+Religious
+
+Modern grid layout for easy browsing.
+
+📞 Contact Page
+
+Contact form for inquiries, bookings, or consultations.
+
+Fully responsive for smooth user experience on any device.
+
+🎯 Gamification & Rewards
+
+Complete tasks on the website to earn points.
+
+Redeem points for discounts on tattoo services.
+
+Encourages engagement and repeat visits.
+
+🖤 Modern & Responsive Design
+
+Black-and-white minimalist theme.
+
+Smooth animations and modern UI components.
+
+Mobile-friendly design ensures accessibility.
+
+🛠️ Technologies Used
+
+Frontend: HTML, CSS, JavaScript, React
+
+Styling: Tailwind CSS or custom CSS
+
+Backend: Node.js + Express (optional for booking/points system)
+
+Database: MongoDB (optional)
+
+Design Tools: Figma
+
+Version Control: Git
+
+🚀 How It Works
+
+Visit the homepage to explore the studio.
+
+Learn about artists and check individual profiles.
+
+Browse tattoo categories to see available designs.
+
+Complete tasks to earn points.
+
+Redeem points for discounts on tattoo sessions.
+
+Contact the studio via the contact page.
+
+🖼️ Screenshots
+
+(Add screenshots of homepage, artist profiles, categories, and contact page here)
+
+✍️ Author
+
+Name: Kiran Choudhary
+
+Role: Full-stack Developer / UI Designer
+
+Portfolio: Your Portfolio Link

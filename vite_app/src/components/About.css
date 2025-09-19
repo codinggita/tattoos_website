@@ -1,332 +1,353 @@
-
-
-.workspace{
-    background-color: black;
-    width: 99.7vw;
-    height: 135vh;
-    margin-top: -40vh;
-    margin-left: 0px;
-    position:absolute;
-    
-}
-.workspace-video{
-    width: 20vw;
-    height: 10vh;
-}
-.text{
-    color:white;
-    padding-left: 39vw;
-    font-size: 280%;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 600;
-    padding-top: -8vh;
-    letter-spacing:1.5px;
-}
-.studio{
-    width: 80vw;
-    padding-left: 9.3vw;
-    padding-top: 2vh;
-    
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.text2{
-    color:black;
-    font-size: 40px;
-    font-family:Bebas Neue, sans-serif;
-    font-weight: 600;
-    padding-left: 10vw;
-    padding-top: 110vh;
-    letter-spacing: px;
-    position: absolute;
-    width: 30vw;
-}
-.text3{
-    color:rgb(54, 51, 51);
-    font-size: 18px;
-    font-family: Bebas Neue, sans-serif;
-    font-weight: 600;
-    padding-left: 10vw;
-    padding-top: 128vh;
-    letter-spacing: px;
-    width: 41vw;
-    position: absolute;
-}
-.text4{
-    color:rgb(54,51,51);
-    font-size: 18px;
-    font-family: Bebas Neue, sans-serif;
-    font-weight: 600;
-    padding-left: 10vw;
-    padding-top: 145vh;
-    letter-spacing: px;
-    width: 41vw;
-    position: absolute;
-}
-.text5{
-    color:rgb(54,51,51);
-    font-size: 18px;
-    font-family: Bebas Neue, sans-serif;
-    font-weight: 600;
-    padding-left: 10vw;
-    padding-top: 162vh;
-    letter-spacing: px;
-    width: 41vw;
-    position: absolute;
-}
-/* .twoimg{
-    width: 27vw;
-    padding-left: 62vw;
-    padding-top: 158vh;
-    height: 77vh;
-    border-radius: 15px 15px 15px 15px;
-    position: absolute;
-} */
-
-
-.container {
-    position: absolute;
-    padding-top:110vh;
-    margin-left: 64vw;
-    width: 405px;
-    
-    
-}
-.image-wrapper {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-}
-.image-wrapper img {
-    width: 100%;
-    display:block;
-}
-.overlay-image {
-    position: absolute;
-    bottom: -40px;
-    left: 35%;
-    transform: translateX(-50%);
-    width: 105%;height: 32vh;
-
-    border-radius: 8px;
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
-    border: 14px solid white;
-}
-.vision-mission{
-    background-color: black;
-    width: 99.7vw;
-    height: 64vh;
-    position: absolute;
-    margin-top: 200vh;
-}
-.vision{
-    color:white;
-    font-size: 40px;
-    font-family: Bebas Neue, sans-serif;
-    font-weight: 600;
-    padding-left: 10vw;
-    padding-top: 5vh;
-}
-.vision-1{
-    color:white;
-    font-size: 20px;
-    font-family: Bebas Neue, sans-serif;
-    padding-left: 10vw;
-    width: 80vw;
-    font-weight: 600;
-}
-.mission{
-    color:white;
-    font-size: 40px;
-    font-family: Bebas Neue, sans-serif;
-    font-weight: 600;
-    padding-left: 10vw;
-    padding-top: 4vh;
-}
-.mission-1{
-    color:white;
-    font-size: 20px;
-    font-family: Bebas Neue, sans-serif;
-    padding-left: 10vw;
-    width: 80vw;
-    font-weight: 600;
+/* Common Font Style */
+body, button, a {
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-.team-section {
-    position: relative;
-    width: 100%;
-    height: 50vh; /* Adjust height as needed */
-    overflow: hidden;
-  }
-  
-  /* Background Video */
-  .team-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    object-fit: cover;
-    margin-top: 1.6vh;
-  }
-  
-  /* Overlay to make text readable */
-  .team-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -10vh;
-  }
-  
-  /* Heading Style */
-  .team {
+.about-page-container {
+  background-color: white;
+  /* CORRECTED: Width should be 100%, not 135.2% */
+  width: 100%; 
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
+  margin-top: -1vh;
+}
+
+/* --- Section Title Styles --- */
+.section-title, .section-title-dark {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: -2.5rem;
+}
+
+.section-title {
+  color: white;
+}
+.section-title1 {
+  color: white;
+  margin-top: -16rem;
+  font-size: 2rem;
+}
+
+.section-title-dark {
+  color: black;
+  text-align: left;
+}
+
+.subsection-title {
     color: white;
-    font-size: 150%;
-    font-family: Bebas Neue, sans-serif;
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
     font-weight: 600;
-    text-align: center;
-    margin-top: -12vh;
-  }
-  
-.team1{
-    background-color: black;
-    width: 26vw;
-    height: 65vh;
-    position: absolute;
-    margin-top: 290vh;
-    margin-left: 18vw;
-    border-radius: 10px;
-}
-.parth{
-    width: 25.3vw;
-    height: 50vh;
-    padding-left: .4vw;
-    padding-top: .7vh;
-    border-radius: 10px;
-}
-.parth1{
-    color:white;
-padding-left: 7vw;
-}
-.eric{
-    color:white;
-padding-left: 9vw;
-}
-.poufa{
-    color:white;
-padding-left: 10vw;
-}
-.sammy{
-    color:white;
-padding-left: 10vw;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
-.parth2{
-    color:white;
-    padding-left: 10vw;
-    margin-top: -3vh;
+/* --- Workspace Section --- */
+.workspace {
+  background-color: black;
+  width: 100%;
+  padding: 5rem 5%;
+  margin-top: 9vh;
 }
-.team2{
-    background-color: black;
-    width: 26vw;
-    height: 65vh;
-    position: absolute;
-    margin-top: 290vh;
-    margin-left: 54vw;
-    border-radius: 10px;
+
+.studio-image {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  display: block;
 }
-.team3{
-    background-color: black;
-    width: 26vw;
-    height: 65vh;
-    position: absolute;
-    margin-top: 365vh;
-    margin-left: 18vw;
-    border-radius: 10px;
+
+/* --- About Intro Section (Flex Layout) --- */
+.about-intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14rem;
+  padding: 5rem 8%;
+  background: white;
+  flex-wrap: wrap; 
 }
-.team4{
-    background-color: black;
-    width: 26vw;
-    height: 65vh;
-    position: absolute;
-    margin-top: 365vh;
-    margin-left: 54vw;
-    border-radius: 10px;
+
+.about-content {
+  flex: 1; 
+  min-width: 350px; 
+  max-width: 600px;
+  margin-left: 0vw;
 }
-.about-button{
-    background-color: white;
-    position: absolute;
-    margin-top: 438vh;
-    margin-left: 40vw;
-    width: 22vw;
-    height: 3.5vw;
-    border: 1px solid black;
-    border-radius: 5px;
+
+.about-content p {
+  color: rgb(54, 51, 51);
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
-.button-1{
-    color: black;
-    font-size: 25px;
-    font-family: Bebas Neue, sans-serif;
-    font-weight: 600;
-    padding-left: 1.4vw;
-    padding-top: 1.2vh;
-    position: absolute;
+
+.image-comparison-container {
+  position: relative;
+  flex: 1; 
+  min-width: 350px; 
+  max-width: 450px;
+  margin-left: -4vw;
 }
-.about-footer{
-    background-color: black;
-    width: 99vw;
-    height: 170vh;
-    margin-top: 455vh;
-    position: absolute;
+
+.image-wrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: -45px; 
+  left: 30%;
+  transform: translateX(-50%);
+  width: 90%;
+  border-radius: 8px;
+  border: 10px solid white;
+}
+
+/* --- Vision & Mission Section --- */
+.vision-mission {
+  background-color: black;
+  width: 100%;
+  padding: 6rem 8%;
+  color: white;
+  margin-top: 2rem;
+}
+
+.vision-mission-content {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-left: 1.5vw;
+}
+
+.vision-mission p {
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* --- Team Video Section --- */
+.team-video-section {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.team-video {
+  width: 100%;
+  height: 20%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Team Display Section --- */
+.team-display-section {
+  background-color: white;
+  padding: 5rem 5%;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10rem; /* Reduced gap for better wrapping */
+  flex-wrap: wrap;
+  padding-top: 3rem; /* Add padding instead of negative margin */
+  margin-top: -38vh;
+}
+
+.team-grid2 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10rem; /* Reduced gap for better wrapping */
+  flex-wrap: wrap;
+  padding-top: 3rem; /* Add padding instead of negative margin */
+  margin-top: 7vh;
+}
+.team-card {
+  background-color: black;
+  width: 100%;
+  max-width: 450px; /* Slightly smaller for better grid layout */
+  min-height: 415px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+}
+
+.team-member-name {
+  color: white;
+  font-size: clamp(1.5rem, 2vw, 1.7rem);
+  font-weight: 600;
+  margin: 1rem 0 0.25rem 0;
+}
+
+.team-member-title {
+  color: #ccc;
+  font-size: clamp(1.2rem, 1.5vw, 1.2rem);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Button Section --- */
+.cta-section {
+  padding: 3rem 0;
+  background-color: white;
+  text-align: center;
+  margin-top: -10vh;
+  
+}
+.cta-button {
+  display: inline-block;
+  padding: 4px 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+.cta-button:hover {
+  /* background-color: black; */
+  /* color: white; */
+}
+
+/* --- Animations (No changes needed here) --- */
+.fade-in { animation: fade-in 1s ease-out forwards; }
+.enter-right { animation: enter-right 1s ease-out forwards; }
+.enter-left { animation: enter-left 1s ease-out forwards; }
+
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes enter-left { from { transform: translateX(-50%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes enter-right { from { transform: translateX(50%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+
+
+/*
+==============================================
+--- MOBILE RESPONSIVE STYLES ---
+==============================================
+*/
+@media (max-width: 768px) {
+
+  /* --- General Spacing & Typography --- */
+  .section-title, .section-title-dark {
+    font-size: 2.2rem; /* Smaller titles on mobile */
   }
 
-  /* Add these styles to your About.css file */
-
-/* Animation for entering from the left */
-.fade-in {
-    animation: fade-in 1s ease-out forwards;
-  }
-  
-  /* Animation for entering from the right */
-  .enter-right {
-    animation: enter-right 1s ease-out forwards;
+  .section-title-dark {
+    text-align: center; /* Center all titles on mobile */
   }
 
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 2;
-    }
+  /* --- About Intro Section --- */
+  .about-intro-section {
+    flex-direction: column; /* Stack text and image vertically */
+    padding: 5rem 5%;
+    gap: 2rem;
   }
   
-  /* Keyframes for entering from the left */
-  @keyframes enter-left {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Keyframes for entering from the right */
-  @keyframes enter-right {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  .about-content {
+    text-align: center; /* Center the paragraph text */
   }
 
+  .image-comparison-container {
+     margin-top: 2rem;
+  }
+
+  /* --- Vision & Mission Section --- */
+  .vision-mission {
+    padding: 3rem 5%; /* Reduce horizontal padding */
+    margin-top: 2rem;
+  }
+
+  /* --- Team Video Section --- */
+  .team-video-section {
+    height: 10vh; /* Make video section shorter */
+   
+ 
+  }
+   .section-title1 {
+    font-size: 2.2rem; /* Smaller titles on mobile */
+    color: white;
+    margin-top: 0rem;
+  }
   
+  /* --- Team Display Section --- */
+  .team-display-section {
+    padding: 3rem 5%;
+  }
+
+  .team-grid {
+    flex-direction: column; /* Stack team cards vertically */
+    align-items: center;   /* Center the stacked cards */
+    gap: 2rem;             /* Space between vertical cards */
+    padding-top: 0;           /* Remove the desktop top padding */
+    margin-top: 0rem;        
+  }
+   .team-grid2 {
+    flex-direction: column; /* Stack team cards vertically */
+    align-items: center;   /* Center the stacked cards */
+    gap: 2rem;             /* Space between vertical cards */
+  margin-top: -1rem;
+    padding-left: 1rem;        /* Remove the desktop top padding */
+  }
+  
+  .team-card {
+    max-width: 350px; /* Allow cards to be a bit wider on mobile */
+  }
+  
+  /* --- Button Section --- */
+  .cta-section {
+    padding: 3rem 0;
+  }
+}

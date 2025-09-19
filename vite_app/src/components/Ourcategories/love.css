@@ -1,214 +1,271 @@
+/* General Body Styles */
 .love-tattoo {
-    background-color: #000;
-    color: #fff;
-    min-height: 100vh;
-    width: 99vw;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  /* Use 100vw to avoid horizontal scrollbar */
+  width:99vw; 
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin-top: 3.7rem;
+}
+
+/* Hero Section */
+.lo-section {
+  position: relative;
+  padding: 100px 1% 160px;
+  background-color: #000;
+  margin-top: rem;
+  height: 45vh;
+}
+
+.lo-content {
+  max-width: 1200px;
+  margin-top: -4rem;
+  margin-left: 9.5rem;
+}
+
+.lo-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  margin-top: 8px;
+}
+
+.lo-content .p4 {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  margin-top: -.8vh;
+  color: white;
+  width: 80vw;
+  max-width: 800px; /* Added for better control */
+}
+
+.wave-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(45deg, transparent 33.33%, #fff 33.33%, #fff 66.66%, transparent 66.66%),
+              linear-gradient(-45deg, transparent 33.33%, #fff 33.33%, #fff 66.66%, transparent 66.66%);
+  background-size: 20px 40px;
+  background-position: 0 -80px;
+}
+
+/* Gallery Section */
+.lo-gallery-section {
+  background-color: #fff;
+  padding: 80px 5%;
+}
+
+.lo-gallery-section h2 {
+  color: #000;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.lo-tattoo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lo-tattoo-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.lo-tattoo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.lo-tattoo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex; /* Added for alignment */
+  align-items: flex-end; /* Align content to bottom */
+}
+
+.lo-tattoo-card:hover .lo-tattoo-overlay {
+  opacity: 1;
+}
+
+.lo-tattoo-card:hover img {
+  transform: scale(1.05);
+}
+
+.lo-like-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem; /* Added for consistency */
+}
+
+/* Aftercare Section */
+.aftercare-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 5%;
+  text-align: center;
+}
+
+.aftercare-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.aftercare-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.aftercare-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.aftercare-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.aftercare-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Footer Section */
+.studio-footer {
+  background-color: #000;
+  padding: 80px 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+/* =============================================== */
+/* NEW AND IMPROVED RESPONSIVE DESIGN              */
+/* =============================================== */
+
+@media (max-width: 768px) {
+
+  .love-tattoo {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  /* Use 100vw to avoid horizontal scrollbar */
+  width:99.9vw; 
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin-top: 5rem;
+}
+  /* Hero Section Adjustments */
+  .lo-section {
+    padding: 80px 5% 100px; /* Reduced padding for mobile */
+    height: auto; /* Allow height to fit content */
+    text-align: center; /* Center align all text */
+    height: 45vh;
+  }
+
+  .lo-content {
+    /* CRITICAL FIX: Remove the large left margin */
+    margin-left: 0;
+    margin-top: -2.5rem;
+  }
+
+  .lo-content h2 {
+    font-size: 2.2rem; /*Adjusted font size */
+    
+  }
+
+  .lo-content .p4 {
+    font-size: 1rem;
+    width: 90vw; /* Make paragraph take more screen width */
+    margin: 0 auto; /* Center the paragraph block */
+  }
+
+  /* Gallery Section Adjustments */
+  .lo-gallery-section h2 {
+    font-size: 2rem;
   }
   
-  /* Hero Section */
-  .sm-section {
-    position: relative;
-    padding: 120px 5% 160px;
-    background-color: #000;
+  .lo-tattoo-grid {
+    /* Reduce the minimum size to allow for 2 columns on smaller screens */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem; /* Reduced gap */
   }
   
-  .sm-content {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .sm-content h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    line-height: 1.2;
-    margin-top: 8px;
-  }
-  
-  .sm-content .p4 {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    margin-top: -.8vh;
-    color: white;
-    width: 80vw;
-  }
-  
-  .wave-divider {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background: linear-gradient(45deg, transparent 33.33%, #fff 33.33%, #fff 66.66%, transparent 66.66%),
-                linear-gradient(-45deg, transparent 33.33%, #fff 33.33%, #fff 66.66%, transparent 66.66%);
-    background-size: 20px 40px;
-    background-position: 0 -80px;
-  }
-  
-  /* Gallery Section */
-  .gallery-section {
-    background-color: #fff;
-    padding: 80px 5%;
-  }
-  
-  .gallery-section h2 {
-    color: #000;
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-  }
-  
-  .tattoo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .tattoo-card {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    aspect-ratio: 1;
-  }
-  
-  .tattoo-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .tattoo-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .tattoo-card:hover .tattoo-overlay {
-    opacity: 1;
-  }
-  
-  .tattoo-card:hover img {
-    transform: scale(1.05);
-  }
-  
-  .like-button {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  /* Aftercare Section */
+  /* Aftercare Section Adjustments */
   .aftercare-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=1920&q=80');
-    background-size: cover;
-    background-position: center;
-    padding: 120px 5%;
-    text-align: center;
-  }
-  
-  .aftercare-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .aftercare-content h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .aftercare-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #ccc;
-  }
-  
-  .aftercare-button {
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .aftercare-button:hover {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  /* Footer Section */
-  .studio-footer {
-    background-color: #000;
     padding: 80px 5%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  }
+
+  .aftercare-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .aftercare-content p {
+    font-size: 1rem;
   }
   
-  .footer-section h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .footer-section p,
-  .footer-section a {
-    color: #ccc;
-    margin-bottom: 0.5rem;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .footer-section a:hover {
-    color: #fff;
+  /* Footer Adjustments */
+  .studio-footer {
+    text-align: center; /* Center footer content when it stacks */
+    gap: 2rem;
   }
   
   .social-links {
-    display: flex;
-    gap: 1rem;
+    justify-content: center; /* Center social icons */
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2.5rem;
-    }
-  
-    .aftercare-content h2 {
-      font-size: 2rem;
-    }
-  
-    .tattoo-grid {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .hero-content h1 {
-      font-size: 2rem;
-    }
-  
-    .hero-content p {
-      font-size: 1rem;
-    }
-  
-    .aftercare-content h2 {
-      font-size: 1.5rem;
-    }
-  }
+}

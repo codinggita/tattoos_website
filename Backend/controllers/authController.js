@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
-const User = require('../models/User');
+const bcrypt = require('bcryptjs');
+const User = require('../Backend.js/models/User');
 
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
 
@@ -8,17 +9,25 @@ exports.register = async (req, res) => {
   try {
     const { name, email, password } = req.body;
 
+    // Validate inputs
+    if (!name || !email || !password) {
+      return res.status(400).json({ error: 'All fields are required' });
+    }
+
     // Check if user already exists
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return res.status(400).json({ error: 'Email already registered' });
     }
 
+    // Hash the password before saving
+    const hashedPassword = await bcrypt.hash(password, 10);
+
     // Create new user
     const user = new User({
       name,
       email,
-      password
+      password: hashedPassword
     });
 
     await user.save();
@@ -32,8 +41,7 @@ exports.register = async (req, res) => {
       user: {
         id: user._id,
         name: user.name,
-        email: user.email,
-        points: user.points
+        email: user.email
       }
     });
   } catch (error) {
@@ -47,14 +55,19 @@ exports.login = async (req, res) => {
   try {
     const { email, password } = req.body;
 
+    // Validate inputs
+    if (!email || !password) {
+      return res.status(400).json({ error: 'Email and password are required' });
+    }
+
     // Find user by email
     const user = await User.findOne({ email });
     if (!user) {
       return res.status(401).json({ error: 'Invalid email or password' });
     }
 
-    // Check password
-    const isValidPassword = await user.comparePassword(password);
+    // Compare password with the hashed one
+    const isValidPassword = await bcrypt.compare(password, user.password);
     if (!isValidPassword) {
       return res.status(401).json({ error: 'Invalid email or password' });
     }
@@ -68,8 +81,7 @@ exports.login = async (req, res) => {
       user: {
         id: user._id,
         name: user.name,
-        email: user.email,
-        points: user.points
+        email: user.email
       }
     });
   } catch (error) {
